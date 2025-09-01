@@ -1,5 +1,5 @@
 import React from "react";
-import ProductCardList from "./components/ProductCardList";
+import ProductCardList from "../components/ProductCardList";
 
 function App() {
   return (
