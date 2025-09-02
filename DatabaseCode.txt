@@ -1,0 +1,12 @@
+CREATE DATABASE student_directory;
+
+USE student_directory;
+
+CREATE TABLE students (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) UNIQUE NOT NULL,
+  department VARCHAR(50) NOT NULL,
+  year INT NOT NULL CHECK(year BETWEEN 1 AND 5),
+  phone VARCHAR(20)
+);
